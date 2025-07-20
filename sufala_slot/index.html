@@ -5,165 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sufala</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="index1.js"></script>
+  <script src="script.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 
 
 </head>
 <body>
-  
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="hero">
     <nav class="navbar">
       <h1 class="logo"><h2>Sufala</h2></h1>
       <ul class="nav-links">
         <li class="home">Home</li>
-       
-          
-
         <li class="about">About</li>
         <li class="contact">Contact</li>
       </ul>
       <h2 class="cart-btn">🛒</h2>
     </nav>
 
-    <script src="index1.js"></script>
-
-
     <div class="hero-content">
       <div class="hero-text">
         <div class="logo_img"><img src="Logo.png" alt=""></div>
-        <h2>Fall in love with <br> Our Naturls  <span>Cold Pressed Oils</span></h2>
-        <p>"Live Oil Extraction and Organic Store offers a unique, immersive experience for health-conscious individuals..</p>
+        <h2>Fall in love with <br> Our Naturals <span>Cold Pressed Oils</span></h2>
+        <p>"Live Oil Extraction and Organic Store offers a unique, immersive experience for health-conscious individuals."</p>
         <p>90+ | 15M+ Healthy Living</p>
-        <button class="shop-btn">Book Now</button>
       </div>
       <div class="hero-image">
-        <!-- Replace with actual image if needed -->
         <img src="Artboard 1 - Edited.png" alt="Model with oil" />
       </div>
     </div>
   </header>
 
-  <!-- Product Section -->
-  <section class="products">
-    <h2>Shop Our Wide Selection of products</h2>
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <h2>Shop Our Wide Selection of Products</h2>
     <div class="product-grid">
-      <div class="product-card">
+      <div class="product-card" onclick="goToCalendar('Coconut')">
         <img src="Untitled-1.png" alt="coconut" />
         <h3>Coconut</h3>
         <p>$80.0</p>
       </div>
-      <div class="product-card">
-        <img src="Untitled-1.png" alt="coconut" />
-        <h3>Coconut</h3>
-        <p>$90.0</p>
-      </div>
-      <div class="product-card">
-        <img src="Untitled-1.png" alt="coconut" />
-        <h3>Coconut</h3>
-        <p>$70.0</p>
-      </div>
-      <div class="product-card">
+
+      <div class="product-card" onclick="goToCalendar('Coconut')">
         <img src="Untitled-1.png" alt="coconut" />
         <h3>Coconut</h3>
         <p>$80.0</p>
       </div>
-      <div class="product-card">
+
+      <div class="product-card" onclick="goToCalendar('Coconut')">
         <img src="Untitled-1.png" alt="coconut" />
         <h3>Coconut</h3>
-        <p>$70.0</p>
+        <p>$80.0</p>
       </div>
-      <div class="product-card">
+
+      <div class="product-card" onclick="goToCalendar('Coconut')">
         <img src="Untitled-1.png" alt="coconut" />
         <h3>Coconut</h3>
-        <p>$100.0</p>
+        <p>$80.0</p>
+      </div>
+
+      <div class="product-card" onclick="goToCalendar('Coconut')">
+        <img src="Untitled-1.png" alt="coconut" />
+        <h3>Coconut</h3>
+        <p>$80.0</p>
+      </div>
+
+      <div class="product-card" onclick="goToCalendar('Coconut')">
+        <img src="Untitled-1.png" alt="coconut" />
+        <h3>Coconut</h3>
+        <p>$80.0</p>
+      </div>
+
+      
+      <!-- Repeat other product cards as needed -->
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar-section" style="display:none">
+    <div class="light">
+      <div class="calendar">
+        <div class="calendar-header">
+          <span class="month-picker" id="month-picker">February</span>
+          <div class="year-picker">
+            <span class="year-change" id="prev-year"><</span>
+            <span id="year">2021</span>
+            <span class="year-change" id="next-year">></span>
+          </div>
+        </div>
+        <div class="calendar-body">
+          <div class="calendar-week-day">
+            <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+          </div>
+          <div class="calendar-days"></div>
+        </div>
+        <div class="month-list"></div>
       </div>
     </div>
   </section>
 
-
-
-  <!-- dates -->
-
-  <body class="light">
-    <div class="calendar">
-        <div class="calendar-header">
-            <span class="month-picker" id="month-picker">February</span>
-            <div class="year-picker">
-                <span class="year-change" id="prev-year">
-                    <pre><</pre>
-                </span>
-                <span id="year">2021</span>
-                <span class="year-change" id="next-year">
-                    <pre>></pre>
-                </span>
-            </div>
-        </div>
-        <div class="calendar-body">
-            <div class="calendar-week-day">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="calendar-days"></div>
-        </div>
-        <div class="calendar-footer">
-            <div class="toggle">
-                <span>Dark Mode</span>
-                <div class="dark-mode-switch">
-                    <div class="dark-mode-switch-ident"></div>
-                </div>
-            </div>
-        </div>
-        <div class="month-list"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
-
-
-
-
-
-
-<!--quantity  -->
-
-   <div class="quantity">
-    
-     <!-- Quantity_selection -->
-
-  <section class="products">
+  <!-- QUANTITY -->
+  <section id="quantity" style="display:none;">
     <h2>Quantity</h2>
     <div class="product-grid">
-      <div class="product-card">
-        
-        <h3>5liter</h3>
-        <p>$80.0</p>
+      <div class="product-card" onclick="selectQuantity('5 Liter')">
+        <h3>5 Liter</h3><p>$80</p>
       </div>
-      <div class="product-card">
-        
-        <h3>3liter</h3>
-        <p>$90.0</p>
+      <div class="product-card" onclick="selectQuantity('3 Liter')">
+        <h3>3 Liter</h3><p>$90</p>
       </div>
-      <div class="product-card">
-        
-        <h3>1litert</h3>
-        <p>$70.0</p>
+      <div class="product-card" onclick="selectQuantity('3 Liter')">
+        <h3>1 Liter</h3><p>$70</p>
       </div>
-   </section>   
-   </div>
+      
+    </div>
+  </section>
 
-<!-- slots -->
+  <!-- slots -->
 
-
-    <section class="products" >
+  <section id="slots" style="display: none;">
+    <div class="products" >
         <h3>Slot Timings</h3>
     <div class="product-grid">
 
-     <div class="product-card">8:00 - 8:30 AM</div>
+     <div class="product-card" onclick="selectSlot('8:00 - 8:30 AM')">
+         8:00 - 8:30 AM
+      </div>
      <div class="product-card">8:30 - 9:00 AM</div>
      <div class="product-card">9:00 - 9:30 AM</div>
      <div class="product-card">9:30 - 10:00 AM</div>
@@ -183,28 +151,26 @@
      <div class="product-card">6:30 - 7:00 PM</div>
      <div class="product-card">7:00 - 7:30 PM</div>
      <div class="product-card">7:30 - 8:00 PM</div>
-     <div class="product-card">8:00 - 8:30 PM</div>
-
-
-    </section>
+     
+    </div>
+  </section>
 </div>
 
 
 
-    
 
-
-  <!-- Customer Reviews -->
+  <!-- REVIEWS -->
   <section class="reviews">
     <h2>Customer Reviews</h2>
     <div class="reviews-grid">
       <div class="review-card">
-        <p>🌟🌟🌟🌟🌟The sesame oil and ghee I purchased from Sufula Organics are incredibly fresh and truly organic. You can taste the purity in every drop. Highly recommend.</p>
+        <p>🌟🌟🌟🌟🌟<br> Fresh & organic! Highly recommend.</p>
       </div>
       <div class="review-card">
-        <p>🌟🌟🌟🌟🌟 The sesame oil and ghee I purchased from Sufula Organics are incredibly fresh and truly organic. You can taste the purity in every drop. Highly recommend.</p>
+        <p>🌟🌟🌟🌟🌟<br> Fresh & organic! Highly recommend.</p>
       </div>
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
-</html>
